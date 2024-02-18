@@ -1,0 +1,22 @@
+<form [formGroup]="stdForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="stdfname">Student Name</label>
+        <input type="text" id="stdfname" class="form-control" formControlName="studentName">
+    </div>
+    <div class="form-group">
+        <label for="studentStd">Student Standard</label>
+        <input type="text" id="studentStd" class="form-control" formControlName="studentStd">
+    </div>
+    <div class="form-group">
+        <label for="studentSchool">Student School Name</label>
+        <input type="text" id="studentSchool" class="form-control" formControlName="studentSchool">
+    </div>
+    <div class="form-group">
+        <label for="studentAge">Student Age</label>
+        <input type="text" id="studentAge" class="form-control" formControlName="studentAge">
+    </div>
+    <div class="text-right">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+</form>
+

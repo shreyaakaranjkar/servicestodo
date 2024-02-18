@@ -1,0 +1,20 @@
+<table class=" table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Sr No</th>
+            <th>Student Name</th>
+            <th>Student Standard</th>
+            <th>Student School</th>
+            <th>Student Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let std of studentArray; let i =index">
+            <td>{{i+1}}</td>
+            <td>{{std.studentName}}</td>
+            <td>{{std.studentStd}}</td>
+            <td>{{std.studentSchool}}</td>
+            <td>{{std.studentAge}}</td>
+        </tr>
+    </tbody>
+</table>
