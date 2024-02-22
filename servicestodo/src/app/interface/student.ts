@@ -2,6 +2,6 @@ export interface Istudent {
     studentName: string;
     studentStd: string;
     studentSchool: string;
-    id: number;
+    id: string;
     studentAge: number;
 }

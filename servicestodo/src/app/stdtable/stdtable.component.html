@@ -6,6 +6,8 @@
             <th>Student Standard</th>
             <th>Student School</th>
             <th>Student Age</th>
+            <th>Edit Student</th>
+            <th>Delete Student</th>
         </tr>
     </thead>
     <tbody>
@@ -15,6 +17,20 @@
             <td>{{std.studentStd}}</td>
             <td>{{std.studentSchool}}</td>
             <td>{{std.studentAge}}</td>
+            <td>
+                <div class="example-button-container">
+                    <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+                      <mat-icon>edit</mat-icon>
+                    </button>
+                  </div>
+            </td>
+            <td>
+                <div class="example-button-container">
+                    <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+                      <mat-icon (click)="onRemove(std.id)">delete</mat-icon>
+                    </button>
+                  </div>
+            </td>
         </tr>
     </tbody>
 </table>
